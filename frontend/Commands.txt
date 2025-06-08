@@ -1,0 +1,19 @@
+"installation of vite"
+
+npm install tailwindcss @tailwindcss/vite
+
+ "in  vite.config.ts"
+import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
+export default defineConfig({
+  plugins: [
+    tailwindcss(),
+  ],
+})
+
+npm install -D @tailwindcss/vite
+
+
+
+
+npm i scoket.io-client
