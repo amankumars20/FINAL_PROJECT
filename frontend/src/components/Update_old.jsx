@@ -2,7 +2,7 @@ import { useRef, useState, useEffect } from "react";
 import { io } from "socket.io-client";
 import { useParams } from "react-router-dom";
 
-const socket = io("http://localhost:5000");
+const socket = io("http://18.209.13.39:5000");
 
 const Whiteboard = () => {
     const { roomId } = useParams();

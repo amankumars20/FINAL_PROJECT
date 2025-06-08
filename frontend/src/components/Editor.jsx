@@ -12,7 +12,7 @@ import Editor from "@monaco-editor/react";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../redux/authSlice";
 
-const socket = io("http://localhost:5000");
+const socket = io("http://18.209.13.39:5000");
 
 const Editor = () => {
     const { roomId } = useParams();

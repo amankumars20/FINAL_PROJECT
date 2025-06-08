@@ -18,7 +18,7 @@ const languageMap = {
   "C#": "csharp",
   JavaScript: "javascript",
 };
-const socket = io("http://localhost:5000");
+const socket = io("http://18.209.13.39:5000");
 
 const CodeEditor = () => {
   const [openModal, setopenModal] = useState(false);

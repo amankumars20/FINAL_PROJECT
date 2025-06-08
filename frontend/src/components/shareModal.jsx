@@ -7,7 +7,7 @@ import CopyImage from "../../public/images/copy.png";
 import InputField from "./InputField";
 import { useSelector } from "react-redux";
 import { io } from "socket.io-client";
-const socket = io("http://localhost:5000");
+const socket = io("http://18.209.13.39:5000");
 const ShareModal = ({
   ownerId,
   roomId,
