@@ -1,8 +1,10 @@
 import axios from "axios";
+const baseUrl = import.meta.env.VITE_BACKEND_URL;
 
 const api = axios.create({
-  baseURL: "http://18.209.13.39:5000/api",
+  baseURL: `${baseUrl}/api`,
 });
+
 
 
 

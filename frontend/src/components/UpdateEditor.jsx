@@ -10,6 +10,7 @@ import { io } from "socket.io-client";
 import Settings from "../../public/images/settings.png";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../redux/authSlice";
+const baseUrl = import.meta.env.VITE_BACKEND_URL;
 
 const languageMap = {
   Java: "java",
@@ -18,7 +19,7 @@ const languageMap = {
   "C#": "csharp",
   JavaScript: "javascript",
 };
-const socket = io("http://18.209.13.39:5000");
+const socket = io(baseUrl);
 
 const CodeEditor = () => {
   const [openModal, setopenModal] = useState(false);

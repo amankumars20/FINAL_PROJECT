@@ -11,8 +11,10 @@ import { io } from "socket.io-client";
 import Editor from "@monaco-editor/react";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../redux/authSlice";
+const baseUrl = import.meta.env.VITE_BACKEND_URL;
 
-const socket = io("http://18.209.13.39:5000");
+const socket = io(baseUrl);
+
 
 const Editor = () => {
     const { roomId } = useParams();

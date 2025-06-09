@@ -1,8 +1,9 @@
 import { useRef, useState, useEffect } from "react";
 import { io } from "socket.io-client";
 import { useParams } from "react-router-dom";
+const baseUrl = import.meta.env.VITE_BACKEND_URL;
 
-const socket = io("http://18.209.13.39:5000");
+const socket = io(baseUrl);
 
 const Whiteboard = () => {
     const { roomId } = useParams();
